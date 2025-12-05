@@ -26,6 +26,7 @@ modules:
       - cargo build --offline --release --all-features
       - install -Dm0755 target/release/gelly ${FLATPAK_DEST}/bin/gelly
       - install -Dm644 resources/${FLATPAK_ID}.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - install -Dm644 resources/${FLATPAK_ID}-symbolic.svg ${FLATPAK_DEST}/share/icons/hicolor/symbolic/apps/${FLATPAK_ID}-symbolic.svg
       - install -Dm644 resources/${FLATPAK_ID}.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 resources/${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
       - install -Dm644 resources/${FLATPAK_ID}.gschema.xml ${FLATPAK_DEST}/share/glib-2.0/schemas/${FLATPAK_ID}.gschema.xml
@@ -33,6 +34,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/Fingel/gelly.git
-        tag: v0.9.0
-        commit: fd96fae7f2f0c21658f48b2451ff13560d906fce
+        tag: v0.10.0
+        commit: 8e73e24fa60aec05fce23294426a2f9fecc69c4d
       - cargo-sources.json
