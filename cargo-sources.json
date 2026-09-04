@@ -808,6 +808,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/diacritics/diacritics-0.2.2.crate",
+        "sha256": "e39a82691e437d97c90836fcee7e1946378123c3fdc1bfec5ae15b769996dda6",
+        "dest": "cargo/vendor/diacritics-0.2.2"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"e39a82691e437d97c90836fcee7e1946378123c3fdc1bfec5ae15b769996dda6\", \"files\": {}}",
+        "dest": "cargo/vendor/diacritics-0.2.2",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/digest/digest-0.10.7.crate",
         "sha256": "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292",
         "dest": "cargo/vendor/digest-0.10.7"
